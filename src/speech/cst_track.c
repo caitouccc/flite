@@ -122,6 +122,7 @@ cst_track *cst_track_copy(const cst_track *t)
         memmove(t2->frames[i],t->frames[i], sizeof(float)*t2->num_channels);
     }
 
+    printf("%p", t2);
     return t2;
 }
 
